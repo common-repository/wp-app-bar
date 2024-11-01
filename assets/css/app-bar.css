@@ -1,0 +1,96 @@
+/*
+ * WP App Bar Styles
+ * @Author WP Dev
+ */
+
+.wp-app-bar-wrapper {
+  position: fixed;
+  padding: 12px 0;
+  background: #000;
+  opacity: 0.80;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+}
+  .wp-app-bar-wrapper:after {
+    clear: both;
+    display: table;
+    content: " ";
+  }
+
+    .wp-app-bar-wrapper ul {
+      margin: 0;
+      list-style: none;
+    }
+
+    .wp-app-bar-wrapper > ul.wp-app-bar-menu {
+      text-align: center;
+    }
+      .wp-app-bar-wrapper ul.wp-app-bar-menu li.wp-app-bar-menu-item {
+        margin-left: -4px;
+        display: inline-block;
+        width: 20%;
+      }
+        .wp-app-bar-wrapper ul.wp-app-bar-menu li.wp-app-bar-menu-item .fa {
+          color: #fff;
+        }
+
+
+  /* Sub Item */
+  .wp-app-bar-wrapper ul.menu-item,
+  .wp-app-bar-wrapper ul.share-item,
+  .wp-app-bar-wrapper .search-item {
+    z-index: 999;
+    padding: 10px 0;
+    background: rgba(0, 0, 0, 0.78);
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 44px;
+    text-align: left;
+  }
+
+  /* Menu Item */
+  .wp-app-bar-wrapper ul.menu-item {
+    display: none;
+  }
+    .wp-app-bar-wrapper ul.menu-item.block {
+      display: block;
+    }
+    .wp-app-bar-wrapper ul.menu-item li {}
+      .wp-app-bar-wrapper ul.menu-item li a {
+        padding: 4px 10px;
+        display: block;
+        color: #fff;
+      }
+        .wp-app-bar-wrapper ul.menu-item li a:hover {
+          background: #2B2B2B;
+        }
+
+  
+
+  /* Search Item */
+  .wp-app-bar-wrapper .search-item {
+    padding: 10px;
+    
+    display: none;
+  }
+    .wp-app-bar-wrapper .search-item.block {
+      display: block;
+    }
+
+  /* Share Item */
+  .wp-app-bar-wrapper ul.share-item {
+    display: none;
+  }
+    .wp-app-bar-wrapper ul.share-item.block {
+      display: block;
+    }
+    .wp-app-bar-wrapper ul.share-item li {}
+      .wp-app-bar-wrapper ul.share-item li a {
+        padding: 4px 10px;
+        display: block;
+        color: #fff;
+      }

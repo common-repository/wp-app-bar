@@ -1,0 +1,24 @@
+/*
+ * WP App Bar styles
+ */
+
+.wp-app-bar-settings {}
+	.wp-app-bar-settings .form-table {}
+		.wp-app-bar-settings .form-table th {}
+		.wp-app-bar-settings .form-table td {
+		    padding: 4px 10px;
+		}
+		.wp-app-bar-settings .submit {
+		    margin-left: 2%;
+		    padding: 0 20px;
+		}
+
+		.wp-app-bar-settings input[type="text"],
+		.wp-app-bar-settings input[type="email"],
+		.wp-app-bar-settings select {
+			width: 100%;
+		}
+
+.pl0 {
+	padding-left: 0 !important;
+}
